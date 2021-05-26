@@ -174,8 +174,11 @@
     const changeFooterText = function () {
       //
       let foots = document.querySelector("footer")
-      
+        foots.addEventListener("click", function(){
+          foots.innerText = "This should have been a footer"
+        })
     };
+    changeFooterText()
 
     /* EXERCISE 11
     Attach an event listener to the input field in the page for console logging its value just after any keystroke.
